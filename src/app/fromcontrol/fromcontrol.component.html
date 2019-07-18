@@ -1,3 +1,12 @@
-<p>
-  fromcontrol works!
-</p>
+<div class="card" style="width: 18rem;">
+  <img src="../assets/melek.jpg" class="rounded mx-auto d-block" alt="photo de melek">
+  <div class="card-body">
+    <h5 class="card-title">{{name.value}}</h5>
+    <p class="card-text description">Edit your name in the inpur below then submit</p>
+    <label>
+      Name:
+      <input type="text"  (ngModelChange)="namechange()" [formControl]="name">
+    </label>
+    <button class="btn btn-success" (click)="updateName()"  [disabled]="!isName">Update Name</button>
+  </div>
+</div>
