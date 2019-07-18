@@ -8,6 +8,7 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 })
 export class FirstComponentComponent implements OnInit {
 
+
   isOuth : boolean = false ;
   modalRef: BsModalRef;
 
