@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { ModalModule } from 'ngx-bootstrap';
 import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './first-component/first-component.component';
+import { FormsModule } from '@angular/forms';
+import {AlertModule, CarouselModule} from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,12 @@ import { FirstComponentComponent } from './first-component/first-component.compo
     FirstComponentComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    AlertModule.forRoot(),
+    CarouselModule,
+    ModalModule.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]
